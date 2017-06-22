@@ -7,7 +7,7 @@ import { ContactPage } from '../pages/contact/contact';
 import { HomePage } from '../pages/home/home';
 import { TabsPage } from '../pages/tabs/tabs';
 import { ChatPage } from '../pages/chat/chat';
-import { Ng2Cable, Broadcaster } from 'ng2-cable/js/index';
+import { Ng2CableModule } from 'ng2-cable/js/index';
 
 @NgModule({
   declarations: [
@@ -19,7 +19,9 @@ import { Ng2Cable, Broadcaster } from 'ng2-cable/js/index';
     ChatPage
   ],
   imports: [
-    IonicModule.forRoot(MyApp), FormsModule
+    IonicModule.forRoot(MyApp),
+    FormsModule,
+    Ng2CableModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -31,9 +33,7 @@ import { Ng2Cable, Broadcaster } from 'ng2-cable/js/index';
     ChatPage
   ],
   providers: [
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
-    Ng2Cable,
-    Broadcaster
+    {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })
 export class AppModule {}
