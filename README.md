@@ -1,4 +1,4 @@
-Ng2-cable-ionic2-example
+Ng2-cable-ionic3-example
 -
 
 API ng2-cable: [https://github.com/viktor-shmigol/ng2-cable](https://github.com/viktor-shmigol/ng2-cable)

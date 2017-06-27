@@ -1,7 +1,7 @@
 import { Component, ViewChild } from '@angular/core';
 import { NavController, Content } from 'ionic-angular';
 import { MessageService } from '../../services';
-import { Broadcaster } from 'ng2-cable/js/index';
+import { Broadcaster } from 'ng2-cable';
 
 @Component({
   selector: 'page-messages',
